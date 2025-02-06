@@ -25,7 +25,12 @@ const Header = () => {
       <div className="container">
         <div className={styles.box}>
           <Link className={styles.logo} to={"/"}>
-            Logo
+            <img
+              src={`${themeMode ? "llogo" : "logo"}.png`}
+              width={51}
+              height={25}
+              alt="site logo icon"
+            />
           </Link>
           <div className={styles.hamburgerMenu}>
             <div className={styles.item} onClick={darkLightMode}>
@@ -73,13 +78,13 @@ const Header = () => {
           </div>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Link to={"/"}>Home</Link>
+              <a href={"#home"}>Home</a>
             </li>
             <li className={styles.item}>
-              <Link to={"/about"}>About</Link>
+              <a href={"#about"}>About</a>
             </li>
             <li className={styles.item}>
-              <Link to={"/work"}>Work</Link>
+              <a href={"#work"}>Work</a>
             </li>
             <li className={styles.item} onClick={darkLightMode}>
               {themeMode ? (

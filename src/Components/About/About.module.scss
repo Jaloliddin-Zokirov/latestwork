@@ -1,0 +1,109 @@
+.about {
+  padding: 92px 0;
+}
+
+.aboutLight {
+  padding: 92px 0;
+  .aboutTitle {
+    color: #111827;
+  }
+
+  .aboutDescription {
+    color: #898989;
+  }
+
+  .item {
+    color: #111827;
+    background-color: #e3e8ed;
+
+    p {
+      color: #111827;
+    }
+  }
+}
+
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTitle {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 0 24px;
+  font-family: "Source Code Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+  text-align: center;
+  color: #f7f3f3;
+}
+
+.aboutDescription {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 0 36px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: justify;
+  color: #abadb2;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media only screen and (max-width: 968px) {
+    justify-content: center;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  background-color: #172135;
+
+  p {
+    margin: 0;
+    color: #f7f3f3;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.7%;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .about,
+  .aboutLight {
+    padding: 46px 0;
+  }
+  .aboutTitle {
+    font-size: 40px;
+  }
+  .aboutDescription {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 557px) {
+  .about,
+  .aboutLight {
+    padding: 38px 0;
+  }
+}

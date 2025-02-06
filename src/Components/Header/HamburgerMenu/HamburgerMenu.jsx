@@ -29,7 +29,7 @@ const HamburgerMenu = () => {
           className={styles.burgerCheckbox}
           onClick={overHidden}
         />
-        <label for="burger-checkbox" className={styles.burger}></label>
+        <label htmlFor="burger-checkbox" className={styles.burger}></label>
         <div className={styles.curtain}></div>
         <ul className={styles.menuList}>
           <li className={styles.menuItem} onClick={() => setMenuOnOff(false)}>
